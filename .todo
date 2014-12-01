@@ -1,0 +1,6 @@
+##########
+## TODO ##
+##########
+
+/application/models/translation.php
+Make $this->language dynamic

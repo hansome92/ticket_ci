@@ -1,0 +1,216 @@
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+
+
+/* ---- TOP NAV ---- */
+.pull {
+	display: none;
+	cursor:pointer;
+}
+
+
+
+
+#top li {
+	position:relative;
+	white-space: nowrap;
+}
+
+/* FIRST LEVEL */
+#top nav>ul {
+}
+
+#top nav>ul>li {
+	display: inline-block;
+}
+
+/* SECOND LEVEL */
+#top nav>ul>li>ul {
+	display:none;
+	position:absolute;
+}
+
+#top nav>ul>li>ul>li {
+	display:block;
+}
+
+/* THIRD LEVEL */
+#top nav>ul>li>ul>li>ul {
+	display:none;
+	position:absolute;
+	top:0;
+	left:100%;
+}
+
+
+
+/* ---- FOOTER NAV ---- */
+
+
+
+
+
+
+@media (min-width:768px){
+	/* ---- TOP NAV ---- */
+	#top .pull {
+		background:url(../images/icon-menu.png) no-repeat 50% 50%;
+	}
+
+	#top nav>ul {
+		height:90px;
+		line-height:90px;
+	}
+
+	#top nav>ul>li:hover>ul {
+		display:block;
+	}
+	
+	#top nav>ul>li {
+		display: inline-block;
+	
+	}
+	
+	#top nav>ul>li:hover {
+		
+	}
+
+	#top nav>ul>li.active a{
+		font-weight:bold;
+	}
+
+	#top nav>ul>li>a{
+		height:90px;
+		line-height:90px;
+		display:block;
+		color:white;
+		text-shadow:0 1px 0px rgba(0,0,0,0.3);
+			padding:0 18px;
+	}
+
+	#top nav>ul>li:hover a{
+		text-decoration:none;
+	}
+	
+	#top nav>ul>li>ul {
+		top: 30px;
+		left: 0;
+		background:#ccc;
+	}
+	
+	#top nav>ul>li>ul>li {
+		height:30px;
+		line-height:30px;
+		padding:0 10px;
+	}
+	
+	#top nav>ul>li>ul>li:hover>ul {
+		display:block;
+	}
+	
+	/* ---- FOOTER NAV ---- */
+	#footer span:first-child {
+		display:block;
+		margin-bottom:15px;
+		font-weight:bold;
+	}
+}
+
+
+
+
+@media only screen and (max-width : 767px) {
+	/* ---- TOP NAV ---- */
+	#top-logo {
+		text-align:center;
+		padding:15px;
+	}
+	
+	#top .row>div {
+		padding-left:0;
+		padding-right:0;
+	}
+
+	.pull, #footer-contact span:first-child {
+		display: block;
+		width: 100%;
+		background:#ccc;
+		padding:0 15px;
+		line-height:30px;
+	}
+	
+	.subpull {
+		width: 30px;
+		height: 30px;
+		background:url(../images/arrow-down.png) no-repeat 50% 50%;
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 15px;
+		cursor:pointer
+	}
+	
+	#top li, #footer li {
+		position:relative;
+		display:block!important;;
+	}
+	
+	#top nav li a, #footer li  a{
+		line-height:30px;
+		display:block;
+	}
+	
+	#top nav li a:hover, #footer li a:hover  {
+		background:#eee;
+	}
+
+	#top nav>ul {
+		display: none;
+		height: auto;
+		width:100%; 
+		background:white;
+		border-bottom:1px solid #ccc;
+	}
+
+	#top nav>ul>li>a { 
+		width: 100%; 
+		text-align: left;
+		padding:0 15px;
+	}
+	
+	#top nav>ul>li>ul {
+		position:relative;
+		border-bottom:1px solid #eee;
+	}
+	
+	#top nav>ul>li>ul>li>a {
+		padding-left:30px;
+	}
+	
+	/* ---- FOOTER NAV ---- */
+	#footer .row>div {
+		padding-left:0;
+		padding-right:0;
+	}
+	
+	
+	#footer ul {
+		display:none;
+	}
+	
+	#footer li, #footer .footer-contact-content {
+		display: block;
+		padding:0 15px;
+	}
+}

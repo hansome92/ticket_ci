@@ -1,0 +1,254 @@
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* ---- SIDE NAV ---- */
+#side-nav {
+	position: fixed;
+	top: 0;
+	left: -100%;
+	height: 100%;
+	width:75%;
+	max-width:300px;
+	background: #1c2b36;
+	z-index: 999999999999999;
+	padding: 15px 0;
+}
+
+
+/* ---- TOP NAV ---- */
+.side-pull {
+	cursor:pointer;
+	position:absolute;
+	top:50%;
+	margin-top:-15px;
+	left:15px;
+	height:30px;
+	width:30px;
+	background:url(../../images/dashboard/icon-menu.png) no-repeat 50% 50%;
+	display:none;
+	z-index: 999;
+}
+
+
+
+
+#top li {
+	position:relative;
+	white-space: nowrap;
+}
+
+/* FIRST LEVEL */
+#top nav>ul {
+	background:#eee;
+}
+
+#top nav>ul>li {
+	display: inline-block;
+}
+
+#menu li a {
+	height:51px;
+	line-height:51px;
+	color:#aeaeb0;
+	padding-left:19px;
+}
+
+#menu li a:hover, #menu li a.active {
+	color:#3bc0c3;
+	text-decoration:none;
+}
+
+#menu li a i {
+	float:left;
+	margin-top:17px;
+	width:16px;
+	height:16px;
+	background:url(../../images/dashboard/icon/menu-icons.png) no-repeat;
+}
+
+.icon-events i { background-position:0px -16px !important; }
+.icon-reports i { background-position:0px -32px !important; }
+.icon-stats i { background-position:0px -48px !important; }
+.icon-inbox i { background-position:0px -64px !important; }
+#menu li .icon-grid:hover i, #menu li .icon-grid.active i { background-position: -16px -0px !important; }
+#menu li .icon-events:hover i, #menu li .icon-events.active i { background-position: -16px -16px !important; }
+#menu li .icon-reports:hover i, #menu li .icon-reports.active i { background-position: -16px -32px !important; }
+#menu li .icon-stats:hover i, #menu li .icon-stats.active i { background-position: -16px -48px !important; }
+#menu li .icon-inbox:hover i, #menu li .icon-inbox.active i { background-position: -16px -64px !important; }
+
+/* SECOND LEVEL */
+#top nav>ul>li>ul, #side-nav>ul>li>ul  {
+	display:none;
+	position:absolute;
+}
+
+#top nav>ul>li>ul>li, #side-nav>ul>li>ul>li  {
+	display:block;
+}
+
+/* THIRD LEVEL */
+#top nav>ul>li>ul>li>ul, #side-nav>ul>li>ul>li>ul {
+	display:none;
+	position:absolute;
+	top:0;
+	left:100%;
+}
+
+
+
+/* ---- FOOTER NAV ---- */
+
+
+
+
+
+
+@media (min-width:768px){
+	/* ---- TOP NAV ---- */
+	#top nav>ul>li:hover>ul {
+		display:block;
+	}
+	
+	#top nav>ul>li {
+		display: inline-block;
+		height: 30px;
+		margin: 30px 35px 30px 0;
+		padding:5px 10px;
+	}
+	
+	#top nav>ul>li:hover {
+		background:#ccc;
+	}
+	
+	#top nav>ul>li>ul {
+		top: 30px;
+		left: 0;
+		background:#ccc;
+	}
+	
+	#top nav>ul>li>ul>li {
+		height:30px;
+		line-height:30px;
+		padding:0 10px;
+	}
+	
+	#top nav>ul>li>ul>li:hover>ul {
+		display:block;
+	}
+	
+	/* ---- FOOTER NAV ---- */
+	.pull, #footer span:first-child {
+		display:block;
+		margin-bottom:15px;
+		font-weight:bold;
+	}
+}
+
+
+
+
+@media only screen and (max-width : 767px) {
+	/* ---- TOP NAV ---- */
+	#top-logo {
+		text-align:center;
+		padding:15px;
+	}
+
+	a i {
+		margin-right:19px;
+	}
+	
+	#top .row>div {
+		padding-left:0;
+		padding-right:0;
+	}
+
+	.pull, #footer-contact span:first-child {
+		display: block;
+		width: 100%;
+		background:#ccc;
+		padding:0 15px;
+		line-height:30px;
+	}
+	
+	.subpull {
+		width: 30px;
+		height: 30px;
+		background:url(../../images/dashboard/arrow-down.png) no-repeat 50% 50%;
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 15px;
+		cursor:pointer
+	}
+	
+	#side-nav li, #footer li {
+		position:relative;
+		display:block!important;;
+	}
+	
+	#side-nav li a, #footer li  a{
+		display:block;
+	}
+	
+	#side-nav li a {
+		color:#aeaeb0;
+	}
+	
+	#side-nav li a:hover, #footer li a:hover  {
+		background:#101a21;
+		text-decoration:none;
+	}
+
+	#side-nav>ul {
+		height: auto;
+		width:100%; 
+	}
+	
+	#side-nav>ul>li{
+	}
+	
+	#side-nav>ul>li:first-child{
+	}
+
+	#side-nav>ul>li>a { 
+		width: 100%; 
+		text-align: left;
+		padding:0 15px;
+	}
+	
+	#side-nav>ul>li>ul {
+		position:relative;
+	}
+	
+	#side-nav>ul>li>ul>li>a {
+		padding-left:30px;
+	}
+	
+	/* ---- FOOTER NAV ---- */
+	#footer .row>div {
+		padding-left:0;
+		padding-right:0;
+	}
+	
+	
+	#footer ul {
+		display:none;
+	}
+	
+	#footer li, #footer .footer-contact-content {
+		display: block;
+		padding:0 15px;
+	}
+}

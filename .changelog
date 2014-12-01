@@ -1,0 +1,6 @@
+###############
+## CHANGELOG ##
+###############
+
+08-02-2014 - Arko Elsenaar: added translation model (/application/model/translation.php)
+08-02-2014 - Arko Elsenaar: added translation helper (/application/helpers/translation_helper.php)

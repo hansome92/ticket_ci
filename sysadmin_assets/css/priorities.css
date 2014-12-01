@@ -1,0 +1,7 @@
+/**
+ * All priority colors
+ */
+
+.main .alert{margin-top: -25px;}
+.high-priority{ color: #d2322d; }
+.med-priority{ color: #f0ad4e; }

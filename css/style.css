@@ -1,0 +1,516 @@
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* ---- STICKY FOOTER ---- */
+html, body, #wrapper {height: 100%;}
+body > #wrapper {height: auto; min-height: 100%;}
+
+body {background:#3bc9ad; color:#737373; }
+
+h1, h2, h3, h4 {color:#28c4a5;}
+/************************************
+	Knopje om Marco te zieken
+************************************/
+.loginknop {
+	cursor: pointer;
+}
+/************************************
+		  		 Einde
+************************************/
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+img{max-width: 100%}
+p {}
+
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+.floatleft {float:left;}
+.floatright {float:right;}
+
+hr {
+	display:block;
+	height:0;
+	margin-top:30px;
+	margin-bottom:40px;
+	border:none;
+	border-bottom:1px solid #dcdcdc;
+}
+
+:focus {
+	outline:none;
+}
+
+.shadow {
+	box-shadow:0px 0px 15px rgba(0,0,0,0.2);
+}
+
+nav.top {
+	font-size:16px;
+}
+
+
+
+/* ---- LOGIN BOX ---- */
+.overlay-content, #overlay {display:none;}
+
+#overlay {
+	position:fixed;
+	width:100%;
+	height:100%;
+	z-index:99999998;
+	background:rgba(0,0,0,0.6);
+}
+
+.overlay-content {
+	z-index:99999999;
+	position:fixed;
+	width:560px;
+	height:610px;
+	top:50%;
+	margin-top:-305px;
+	left:50%;
+	margin-left:-280px;
+	background:#3bc9ad;
+	text-align:center;
+	padding:35px 55px 55px 55px;
+	border-radius:2px;
+}
+
+.overlay-content ::-webkit-input-placeholder {color:#abcec7;}
+.overlay-content :-moz-placeholder {color:#abcec7;}
+.overlay-content ::-moz-placeholder {color:#abcec7;}
+.overlay-content :-ms-input-placeholder {color:#abcec7;}
+
+.overlay-content h1 {
+	margin-top:30px;
+	color:white;
+	font-family:open sans, sans-serif;
+	font-weight:700;
+	font-size:22px;
+	text-shadow:0 1px 1px #22947d;
+}
+
+.overlay-content h2 {
+	color:white;
+	margin:0;
+	font-size:18px;
+	font-weight:normal;
+	background:#3bc9ad;
+	padding:0 10px;
+	margin-top:-18px;
+	display:inline;
+}
+
+.overlay-content input {
+	display:block;
+	width:100%;
+	margin-top:20px;
+	height:67px;
+	padding:5px 15px 0 75px;
+	border:none;
+	border-radius:50px;
+	color:#abcec7;
+	border-top:3px solid #37b69d;
+	
+}
+
+.overlay-content input:focus {outline:none;}
+
+.overlay-content input[type=submit] {
+	line-height:67px;
+	color:white;
+	background:#f7b423;
+	font-size:22px;
+	font-weight:600;
+	font-style:normal;
+	padding:0px;
+	border-top:none;
+	text-shadow:1px 1px 0px #cc9f52;
+}
+
+.overlay-content input[type=submit]:hover {
+	background:#ebab20;
+}
+
+#loginusername {background:white url(../images/iconusername.png) 25px 50% no-repeat;}
+#loginpassword {background:white url(../images/iconpassword.png) 25px 50% no-repeat;}
+
+.overlay-content #line {
+	margin-top:36px;
+	margin-bottom:45px;
+	height:14px;
+	border-bottom:1px solid white;
+}
+
+.overlay-content #socialmedialogin a {
+	width:143px;
+	height:70px;
+	line-height:70px;
+	text-align:left;
+	padding-left:60px;
+	margin-left:10px;
+	display:inline-block;
+	color:white;
+	border-radius:2px;
+	font-size:18px;
+}
+
+.overlay-content #socialmedialogin a:hover {
+	text-decoration:none;
+	cursor: pointer;
+}
+
+.overlay-content #socialmedialogin a:first-child {
+	margin-left:0px;
+}
+
+#facebooklogin, #facebooklogin-tickets {background:#3b5999 url(../images/iconfacebook.png) 24px 50% no-repeat;}
+#facebooklogin:hover, #facebooklogin-tickets:hover {background-color:#36518d;}
+#twitterlogin {background:#1ab2e8 url(../images/icontwitter.png) 15px 50% no-repeat;}
+#twitterlogin:hover {background-color:#50a2d3;}
+#linkedinlogin {background:#0274b3 url(../images/iconlinkedin.png) 22px 50% no-repeat;}
+#linkedinlogin:hover {background-color:#046aa5;}
+
+/* ---- TOP MENU ---- */
+#top {
+    z-index: 100;
+	margin-left:55px;
+	margin-right:55px;
+	border-bottom:1px solid #90e4d5	;
+}
+
+#top-logo img {height:42px;}
+
+#push {
+    height: 100px;
+}
+
+
+/* ---- SLIDER ---- */
+.slider-inner {
+	background:#efffff;
+	height:300px;
+}
+
+.slider-nav {
+	background:#eee;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+}
+
+
+
+/* ---- CONTENT ---- */
+.content {
+	background:white;
+	min-height:100%;
+	padding:45px;
+	font-size:16px;
+	padding-bottom:100px;
+	border-top-right-radius:2px;
+	border-top-left-radius:2px;
+}
+
+.center {
+	margin:20px auto;
+	text-align:center;
+}
+
+.yellowbtn {
+	-moz-box-shadow:inset 0px -3px 0px 0px #ff8c00;
+	-webkit-box-shadow:inset 0px -3px 0px 0px #ff8c00;
+	box-shadow:inset 0px -3px 0px 0px #ff8c00;
+	background:#f7b423;
+	-webkit-border-top-left-radius:50px;
+	-moz-border-radius-topleft:50px;
+	border-top-left-radius:50px;
+	-webkit-border-top-right-radius:50px;
+	-moz-border-radius-topright:50px;
+	border-top-right-radius:50px;
+	-webkit-border-bottom-right-radius:50px;
+	-moz-border-radius-bottomright:50px;
+	border-bottom-right-radius:50px;
+	-webkit-border-bottom-left-radius:50px;
+	-moz-border-radius-bottomleft:50px;
+	border-bottom-left-radius:50px;
+	text-indent:0px;
+	display:inline-block;
+	color:#ffffff;
+	font-size:22px;
+	font-weight:600;
+	font-style:normal;
+	height:68px;
+	line-height:62px;
+	width:214px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #cc9f52;
+	margin-right:20px;
+}
+
+.yellowbtn:hover {
+	text-decoration:none;
+	color:#FFF;
+	background:#ebab20;
+}
+
+.linebtn {
+	padding:15px 39px 19px;
+	background:none;
+	border-radius:50px;
+	color:#FFF;
+	font-size:22px;
+	font-weight:600;
+	border:2px solid #FFF;
+}
+
+.linebtn:hover {
+	background:#36b69d;
+	border:2px solid #36b69d;
+	padding:15px 39px 19px;
+	color:#fff;
+	text-decoration: none;
+}
+
+.slogan h1 {
+	color:#FFF;
+	font-size:42px;
+	font-family:open sans, sans-serif;
+	font-weight:600;
+	font-style:italic;
+	text-align:center;
+	letter-spacing:-2px;
+	text-shadow:0 -1px 1px #23a389;
+	margin-top:40px;
+}
+
+.bodyhome {
+	overflow-x:hidden;
+	background:#3bc9ad url(../images/bg.jpg) bottom center / contain repeat-x !important;
+}
+
+
+/* ---- ORDER TICKETS ---- */
+#ordertickets .steps {
+	display:block;
+}
+
+#ordertickets #step1 {
+	display:block;
+}
+
+#ordertickets #steps h2 {
+	margin-left:-15px;
+	font-size:18px;
+	display:block;
+	text-align:center;
+	height:65px;
+	line-height:65px;
+	background:#f1f1f1;
+	border-radius:2px;
+	color:#737373;
+}
+
+#ordertickets #steps>div:first-child h2 {
+	margin-left:0px;
+}
+
+#ordertickets #steps h2.active {
+	background:#28c4a5;
+	color:white;
+}
+
+#ordertickets input[type=submit], a.next-step, a.prevstep, a.payment-step{
+	background:#f7ad1d;
+	font-size:18px;
+	font-weight:600;
+	color:white;
+	height:50px;
+	line-height:50px;
+	padding:0 32px;
+	border-radius:25px;
+	border:none;
+	border-bottom:3px solid #cf9419;
+	text-shadow:0 2px 0 rgba(0,0,0,0.3);
+	display: block;
+	cursor:pointer;
+}
+
+#ordertickets input[type=submit].prevstep, #ordertickets a.prevstep {
+	background:#eaeaea;
+	border-bottom-color:#d0d0d0;
+	color:#737373;
+	text-shadow:none;
+}
+
+#ordertickets table {
+	width:100%;
+}
+
+#ordertickets th, #ordertickets td {
+	padding-bottom:10px;
+}
+
+#ordertickets th {
+	text-align:left;
+}
+
+#ordertickets th{
+	font-weight:normal;
+}
+
+#ordertickets #eventinfo th:first-child {
+	width: 25%;
+}
+
+#ordertickets #eventinfo tr:first-child td {
+	font-weight:700;
+}
+
+#ordertickets #ticketinfo th {
+	font-weight:700;
+}
+
+#ordertickets #ticketinfo .tickets {
+	width:40%;
+}
+
+#ordertickets ::-webkit-input-placeholder {color:#737373;}
+#ordertickets :-moz-placeholder {color:#737373;}
+#ordertickets ::-moz-placeholder {color:#737373;}
+#ordertickets :-ms-input-placeholder {color:#737373;}
+
+#ordertickets input[type=text], #ordertickets input[type=password], #ordertickets select {
+	background:#eaeaea;
+	border-radius:2px;
+	border:none;
+	border-top:3px solid #d0d0d0;
+	height:50px;
+	line-height:50px;
+	padding:0 18px;
+	margin-right:13px;
+}
+
+#ordertickets #ticketinfo select {
+	background:#eaeaea;
+	border-radius:2px;
+	border:none;
+	border-top:3px solid #d0d0d0;
+	padding: 10px 40px 10px 10px;;
+}
+
+
+#ordertickets #socialmedialogin a {
+	width:143px;
+	height:70px;
+	line-height:70px;
+	text-align:left;
+	padding-left:60px;
+	margin-left:10px;
+	display:inline-block;
+	color:white;
+	border-radius:2px;
+	font-size:18px;
+}
+#ordertickets input[type=submit] {
+	margin-top:50px;
+	line-height:67px;
+	font-size:24px;
+	color:white;
+	background:#37b69d;
+	padding:0px;
+	border-top:none;
+	display: block;
+	width: 100%;
+	margin-bottom: 50px;
+	height: 67px;
+	border: none;
+	border-radius: 2px;
+}
+
+#ordertickets .facebook-row{
+	padding: 15px 0;
+	background: #e2f6f4;
+	color:#747476;
+}
+#ordertickets .facebook-row td { 
+	padding: 15px 0;
+}
+#ordertickets .facebook-row:first-child {
+	padding-left:15px;
+} 
+#ordertickets .facebook-row a{
+	padding: 10px 15px;
+	margin-left;25px;
+	line-height: 15px;
+	border-radius: 25px;
+	background: #3a5a97;
+	color: #fff;
+	font-weight: 800;
+}
+.facebook-row .loading{
+	margin:5px;
+	background: url('../images/fb-loader.gif');
+	width:16px;
+	height:16px;
+	display:none;
+	float:right;
+}
+/* ---- FOOTER ---- */
+#footer {
+	width:100%;
+	background:#252525;
+}
+
+
+
+
+/* MOBILE */
+@media (max-width:767px) {  		
+	#top-logo {
+		height:70px;
+		line-height:70px;
+	}
+				
+	#push {
+		height:100px;
+	}
+}
+
+/* TABLET */
+@media (min-width: 768px) and (max-width: 991px) {  
+    
+}
+
+/* TABLET + DESKTOP */
+@media (min-width:768px) { 	
+	#top {
+		height:90px;
+	}
+	
+	#top-logo {
+		line-height:100px;
+	}
+		
+    #footer {
+		padding:15px 0;
+	}
+}
+
+/* DESKTOP */
+@media (min-width: 992px) and (max-width:1199px) { 
+
+}
+
+/* DESKTOP LARGE */
+@media (min-width: 1500px) { 
+
+}

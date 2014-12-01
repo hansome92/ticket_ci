@@ -1,0 +1,55 @@
+input[type='text'], input[type='select']{
+	background:#eaeaea;
+	border-radius:2px;
+	border:none;
+	border-top:3px solid #d0d0d0;
+	height:50px;
+	line-height:50px;
+	padding:0 18px;
+	margin-right:13px;
+}
+p.error{
+	color: #c9423b;
+}
+label.error{
+	display:none !important;
+}
+input.error[type="text"], input.error[type="password"]{
+	outline: #c9423b 1px solid;
+}
+.create-event{
+	cursor:pointer;
+}
+#ticketinfo .first-step-amount input{
+	width:30px;
+	padding: 0px !important;
+	float:left;
+	margin: 0 !important;
+	line-height:30px;
+	text-align:center;
+}
+.yellowbtn-plus-minus{
+	moz-box-shadow: inset 0px -3px 0px 0px #ff8c00;
+	-webkit-box-shadow: inset 0px -3px 0px 0px #ff8c00;
+	box-shadow: inset 0px -3px 0px 0px #ff8c00;
+	background: #f7b423;
+	border-radius: 30px;
+	text-indent: 0px;
+	display: block;
+	float:left;
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: 800;
+	font-style: normal;
+	height: 40px;
+	line-height: 40px;
+	width: 40px;
+	text-decoration: none;
+	text-align: center;
+	text-shadow: 1px 1px 0px #cc9f52;
+	
+}
+.yellowbtn-plus-minus:hover{
+	text-decoration: none;
+	color:#ffffff;
+}

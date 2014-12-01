@@ -1,0 +1,288 @@
+.dashboard div.fancy-select {
+	position: relative;
+	font-weight: bold;
+	font-size: 12px;
+	color: #46565D;
+	font-family:Lato;
+}
+
+.dashboard div.fancy-select.disabled {
+	opacity: 0.5;
+}
+.dashboard div.fancy-select select:focus + div.trigger.open {
+	box-shadow: none;
+}
+
+.dashboard div.fancy-select div.trigger {
+	border-radius: 4px;
+	cursor: pointer;
+	padding: 5px 24px 5px 9px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	position: relative;
+	background: #1c2b36;
+	color: #fafafa;
+
+	transition: all 240ms ease-out;
+	-webkit-transition: all 240ms ease-out;
+	-moz-transition: all 240ms ease-out;
+	-ms-transition: all 240ms ease-out;
+	-o-transition: all 240ms ease-out;
+}
+
+.dashboard div.fancy-select div.trigger:after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 9px;
+	height: 8px;
+	background:url('../../images/dashboard/arrow-select.png') no-repeat;
+	top: 11px;
+	right: 9px;
+}
+
+
+.dashboard div.fancy-select div.trigger.open:after {
+	border-top-color: #7A8498;
+}
+
+.dashboard div.fancy-select ul.options {
+	list-style: none;
+	margin: 0;
+	position: absolute;
+	top: 0px;
+	left: 0;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 50;
+	max-height: 200px;
+	overflow: auto;
+	background: #1c2b36;
+	border-radius: 4px;
+	padding: 6px 0;
+
+	transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+	-webkit-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+	-ms-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+	-o-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+}
+
+.dashboard div.fancy-select ul.options.open {
+	visibility: visible;
+	top: 30px;
+	opacity: 1;
+
+	/* have to use a non-visibility transition to prevent this iOS issue (bug?): */
+	/*http://stackoverflow.com/questions/10736478/css-animation-visibility-visible-works-on-chrome-and-safari-but-not-on-ios*/
+	transition: opacity 300ms ease-out, top 300ms ease-out;
+	-webkit-transition: opacity 300ms ease-out, top 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out, top 300ms ease-out;
+	-ms-transition: opacity 300ms ease-out, top 300ms ease-out;
+	-o-transition: opacity 300ms ease-out, top 300ms ease-out;
+}
+
+.dashboard div.fancy-select ul.options.overflowing {
+	top: auto;
+	bottom: 40px;
+
+	transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+	-webkit-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+	-ms-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+	-o-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+}
+
+.dashboard div.fancy-select ul.options.overflowing.open {
+	top: auto;
+	bottom: 50px;
+
+	transition: opacity 300ms ease-out, bottom 300ms ease-out;
+	-webkit-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+	-ms-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+	-o-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+}
+
+.dashboard div.fancy-select ul.options li {
+	padding: 6px 12px;
+	color: #fafafa;
+	cursor: pointer;
+	white-space: nowrap;
+
+	transition: all 150ms ease-out;
+	-webkit-transition: all 150ms ease-out;
+	-moz-transition: all 150ms ease-out;
+	-ms-transition: all 150ms ease-out;
+	-o-transition: all 150ms ease-out;
+}
+
+.dashboard div.fancy-select ul.options li.hover {
+	color: #fff;
+	background:#263743;
+}
+
+/************************************
+	Dashboard forms selectboxes
+************************************/
+	.big-select div.fancy-select {
+		position: relative;
+		float:left;
+		width: 75%;
+		font-weight: bold;
+		font-size: 12px;
+		color: #46565D;
+		font-family:Lato;
+		max-width: 285px;
+	}
+
+	.big-select div.fancy-select.disabled {
+		opacity: 0.5;
+	}
+
+
+
+	.big-select div.fancy-select select:focus + .big-select div.trigger.open {
+		box-shadow: none;
+	}
+
+	.big-select div.fancy-select div.trigger {
+		border-radius: 4px;
+		cursor: pointer;
+		padding: 5px 24px 5px 9px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		position: relative;
+		background: #1c2b36;
+		color: #fafafa;
+
+		transition: all 240ms ease-out;
+		-webkit-transition: all 240ms ease-out;
+		-moz-transition: all 240ms ease-out;
+		-ms-transition: all 240ms ease-out;
+		-o-transition: all 240ms ease-out;
+	}
+	.big-select div.fancy-select div.trigger{
+		font-size: 15px;
+		line-height: 20px;
+		padding: 10px;
+		background: #3bc9ad url('../../images/dashboard/icon/dropdown.png') no-repeat;
+		background-position:right; 
+		border-radius:4px;
+		max-width: 285px;
+	}
+	.big-select div.fancy-select div.trigger:after {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 9px;
+		height: 8px;
+		top: 11px;
+		right: 9px;
+	}
+
+
+	.big-select div.fancy-select div.trigger.open:after {
+		border-top-color: #7A8498;
+	}
+
+	.big-select div.fancy-select ul.options {
+		list-style: none;
+		margin: 0;
+		position: absolute;
+		top: 0px;
+		right: 0;
+		visibility: hidden;
+		opacity: 0;
+		z-index: 50;
+		max-height: 200px;
+		overflow: auto;
+		background: #1c2b36;
+		border-radius: 4px;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+		padding: 0px 0;
+		width: 100%;
+
+		transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+		-webkit-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+		-moz-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+		-ms-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+		-o-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+	}
+
+	.big-select div.fancy-select ul.options.open {
+		visibility: visible;
+		top: 40px;
+		opacity: 1;
+		transition: opacity 300ms ease-out, top 300ms ease-out;
+		-webkit-transition: opacity 300ms ease-out, top 300ms ease-out;
+		-moz-transition: opacity 300ms ease-out, top 300ms ease-out;
+		-ms-transition: opacity 300ms ease-out, top 300ms ease-out;
+		-o-transition: opacity 300ms ease-out, top 300ms ease-out;
+		background:#fff;
+		border:1px solid #ececec;
+		color: #2d3037;
+	}
+
+	.big-select div.fancy-select ul.options.overflowing {
+		top: auto;
+		bottom: 40px;
+
+		transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+		-webkit-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+		-moz-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+		-ms-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+		-o-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+	}
+
+	.big-select div.fancy-select ul.options.overflowing.open {
+		top: auto;
+		bottom: 50px;
+
+		transition: opacity 300ms ease-out, bottom 300ms ease-out;
+		-webkit-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+		-moz-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+		-ms-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+		-o-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+	}
+
+	.big-select div.fancy-select ul.options li {
+		padding: 6px 12px;
+		color: #2d3037;
+		cursor: pointer;
+		white-space: nowrap;
+
+		transition: all 150ms ease-out;
+		-webkit-transition: all 150ms ease-out;
+		-moz-transition: all 150ms ease-out;
+		-ms-transition: all 150ms ease-out;
+		-o-transition: all 150ms ease-out;
+	}
+	.big-select div.fancy-select ul.options li.hover {
+		color: #fff;
+		background:#263743;
+	}
+
+.color-preset-select{
+}
+.color-preset-select .fancy-select{
+	width: 100% !important;
+}
+#tickets-form .ticket-wrapper .ppt-col .big-select .fancy-select{
+	width:15%;
+	margin-right:5%;
+}
+#tickets-form .ticket-wrapper .ppt-col .big-select .fancy-select .trigger{
+	background-image: none;
+	text-align: center;
+	padding: 10px 0;
+	width:100%;
+}
+#tickets-form .ticket-wrapper .ppt-col .big-select div.fancy-select ul.options.open{
+	width: 30px;
+	top: 40px;
+	left: 0;
+}

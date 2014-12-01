@@ -1,0 +1,133 @@
+body { margin:0; overflow-x:hidden;}
+* { font-family:Ledger;}
+#nav {width: 100%; height:100px; color: #333; background: #000;}
+#nav a{	padding: 5px 20px; font-size:20px;}
+#steps { padding:0; margin:0; background:white;overflow:hidden; position:fixed; width:100%; top:0; z-index:55;}
+#steps li { list-style-type:none; background:white;text-align:center;width:25%;font:18px/60px Tahoma sans-serif; float:left; border-bottom:2px solid #eee;}
+#steps li a { text-decoration:none;display:block;color:#555;border-right:1px solid rgba(242,242,242,0.8)}
+#steps li.active {
+	background:rgba(242,242,242,0.5);
+}
+#steps li a:hover {
+	background:rgba(242,242,242,0.4);
+}
+
+#content { margin:0 auto; margin-top:100px;width:960px;font-size:24px;color:#888;font-family:Roboto !important; }
+
+td { width:540px; }
+#content table tr td:first-child { width:300px;font-family:Roboto !important;font-weight:300; }
+tr { padding:10px 0;}
+input[type="text"], input[type="password"] {
+	padding:10px 15px;
+	border:1px solid #ddd;
+	border-bottom:2px solid #ddd;
+	border-radius:5px;
+	outline:none;
+	display:block;
+	width:100%;
+	font-size:32px;
+	font-family:Roboto;
+	font-weight:300;
+}
+
+#content a{
+	margin: 5px 10px;
+}
+.back, #content a {
+	border-radius:3px;
+	border:1px solid #ccc;
+	padding:10px 15px;
+	text-decoration:none;
+	color:#555;
+	font-size:18px;
+	margin-top:20px;
+	display:block;
+	float:left;
+	border-bottom:2px solid #ccc;
+	font-family:Roboto;
+}
+
+.next, input[type="submit"] {
+	border-radius:3px;
+	border:1px solid rgb(17, 183, 17);
+	padding:10px 15px;
+	text-decoration:none;
+	color:#fff;
+	font-size:18px;
+	margin-top:20px;
+	display:block;
+	float:right;
+	margin-right:-32px;
+	border-bottom:2px solid rgb(17, 183, 17);
+	background: rgb(129,221,110); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(129,221,110,1) 0%, rgba(74,226,74,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(129,221,110,1)), color-stop(100%,rgba(74,226,74,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(129,221,110,1) 0%,rgba(74,226,74,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(129,221,110,1) 0%,rgba(74,226,74,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(129,221,110,1) 0%,rgba(74,226,74,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(129,221,110,1) 0%,rgba(74,226,74,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#81dd6e', endColorstr='#4ae24a',GradientType=0 ); /* IE6-9 */
+	text-shadow:1px 1px 1px rgba(0,0,0,0.5);
+	font-family:Roboto;
+}
+
+table {
+	position:absolute;
+}
+div.lang-form{
+	float:right;
+	display:block;
+	height: :100%;
+	margin: auto 10px;
+
+}
+/***************************************
+			Tickets bestellen
+***************************************/
+.ticketbox .tickets table, .ticketbox .event table{
+	position: relative;
+	display: table;
+}
+.steps{
+	position: relative;
+	height: 30px;
+	width: 100%;
+}
+.steps div{
+	position: relative;
+	float: left;
+	display:block;
+}
+.steps div span{
+	float: left;
+	display:block;
+	padding: 10px 20px;
+}
+.ticketbox{
+	margin: 0 auto;
+	padding: 20px;
+	display:block;
+	width: 600px;
+	height: auto;
+	background: #ccc;
+}
+.ticketbox .done span{
+	color:#555;
+}
+.ticketbox .event{
+	display: block;
+	width:90%;
+	margin:5%;
+	border: 1px dashed #999;
+}
+.res-tickets table{
+	position:relative;
+	margin-top:35px;
+	width: 100%;
+}
+.res-tickets table thead th{
+	text-align: left;
+}
+.res-tickets table tr td{
+	width: 25%;
+}

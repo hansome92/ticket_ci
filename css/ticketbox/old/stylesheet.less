@@ -1,0 +1,240 @@
+/************************************
+      Preview header
+************************************/
+body{
+    
+}
+#dashboard-event-preview {
+  float: left;
+  width: 100%;
+  padding: 0 45px;
+  margin: 0 auto;
+}
+#dashboard-event-preview .preview-wrapper {
+  max-width: 720px;
+  margin: 0 auto;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+#dashboard-event-preview .preview-wrapper img{
+    max-width: 100%;
+}
+#dashboard-event-preview .preview-wrapper .preview-header {
+  width: 100%;
+  height: auto;
+  max-height: 355px;
+  overflow: hidden;
+  max-width: 100%;
+  background-size: 100%;
+}
+#dashboard-event-preview .preview-wrapper .preview-row {
+  width: 100%;
+  background: #15181a;
+  border-top: 1px solid rgba(0,0,0,0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  float: left;
+}
+#dashboard-event-preview .preview-wrapper .preview-row .next-step, #dashboard-event-preview .preview-wrapper .preview-row .payment-submit{
+  line-height: 20px;
+  padding: 10px 50px 10px 20px;
+  background: #e34e11 url('../../images/dashboard/icon/play.png') right no-repeat;
+  border-radius: 4px;
+  color: #fff;
+  border: none;
+  font-family: lato;
+  font-size: 16px;
+  float: right;
+  margin: 27px 40px;
+  cursor: pointer;
+}
+#dashboard-event-preview .preview-wrapper .preview-row .steps {
+  padding: 30px 40px;
+  height: auto;
+  width: 100%;
+  float: left;
+}
+#dashboard-event-preview .preview-wrapper .preview-row .steps .step {
+  width: 25%;
+  float: left;
+}
+#dashboard-event-preview .preview-wrapper .preview-row .steps .step .step-number {
+  width: 34px;
+  height: 35px;
+  border-radius: 35px;
+  float: left;
+  display: block;
+  background: #070808;
+  text-align: center;
+  font-weight: bold;
+  line-height: 35px;
+  padding-right: 1px;
+}
+#dashboard-event-preview .preview-wrapper .preview-row .steps .active .step-number {
+  background: #e44f11;
+}
+#dashboard-event-preview .preview-wrapper .preview-row .steps .step .step-title {
+  font-size: 15px;
+  font-family: Open Sans;
+  color: #fff;
+  line-height: 35px;
+  font-weight: 300;
+  float: left;
+  display: inline-block;
+  margin: 0 13px 0 13px;
+}
+#dashboard-event-preview .preview-wrapper .preview-row .left {
+  padding: 30px 40px;
+  width: 70%;
+  width: calc(80% - 40px);
+}
+#dashboard-event-preview .preview-wrapper .preview-row .left p {
+  line-height: 18px;
+  font-size: 15px;
+  width: 100%;
+  color: #ececec;
+}
+#dashboard-event-preview .preview-wrapper .preview-row .right {
+  width: 20%;
+}
+#dashboard-event-preview .preview-wrapper .preview-row .right img {
+  width: 90%;
+  margin: 10% 5%;
+}
+#dashboard-event-preview .preview-wrapper .preview-row .left table.event-info td {
+  text-align: left;
+  width: 20%;
+  font-size: 13px;
+  color: #ececec;
+  line-height: 50px;
+}
+#dashboard-event-preview .preview-wrapper .preview-row .left table.event-info td.event-info-node {
+  width: 35%;
+}
+#dashboard-event-preview .preview-wrapper .preview-row .left table.event-info {
+  width: 100%;
+}
+#dashboard-event-preview .preview-wrapper .preview-row .left table.event-info .event-info-node {
+  color: #3a3e42;
+}
+#dashboard-event-preview .preview-wrapper .preview-row .left table.event-info .event-title {
+  color: #c84812;
+}
+table#ticketinfo {
+  width: 90%;
+  width: calc(100% - 80px);
+  margin: 30px 40px;
+}
+table#ticketinfo tbody tr td,
+table#ticketinfo thead tr th,
+table#ticketinfo tfoot tr td {
+  padding: 0 15px;
+  line-height: 48px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 400;
+  color: #f3f3f3;
+}
+table#ticketinfo thead tr th {
+  background: #e34e11;
+}
+table#ticketinfo tbody tr td {
+  background: #2d3134;
+}
+table#ticketinfo thead tr:first-child th:first-child {
+  border-top-left-radius: 4px;
+}
+table#ticketinfo thead tr:first-child th:last-child {
+  border-top-right-radius: 4px;
+}
+table#ticketinfo tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 4px;
+}
+table#ticketinfo tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 4px;
+}
+table#ticketinfo .first-step-amount {
+  text-align: left;
+  padding-right: 30px;
+}
+table#ticketinfo .first-step-amount input {
+  display: none;
+}
+table#ticketinfo .first-step-amount .minus,
+table#ticketinfo .first-step-amount .plus {
+  float: left;
+  height: 16px;
+  width: 16px;
+}
+table#ticketinfo .first-step-amount .minus {
+  background: url('../../images/dashboard/icon/substract.png') no-repeat;
+  margin: 16px 5px 16px 0;
+}
+table#ticketinfo .first-step-amount .plus {
+  background: url('../../images/dashboard/icon/add.png') no-repeat;
+  margin: 16px 0px 16px 5px;
+}
+table#ticketinfo .first-step-amount span {
+  float: left;
+  display: inline-block;
+  line-height: 48px;
+  min-width: 35px;
+  text-align: center;
+}
+table#ticketinfo tfoot span {
+  
+}
+table#ticketinfo tfoot input,
+table#ticketinfo tfoot label {
+  float: left;
+}
+table#ticketinfo tfoot label {
+  margin-right: 5px;
+}
+table#ticketinfo tfoot input {
+  margin: 18px 5px 18px 0;
+  background: #000;
+}
+
+
+
+
+input[type='text'], input[type='select'], input[type='password']{
+  background:#eaeaea;
+  border-radius:2px;
+  border:none;
+  border-top:3px solid #d0d0d0;
+  height:50px;
+  line-height:50px;
+  padding:0 18px;
+  margin-right:13px;
+}
+p.error{
+  color: #c9423b;
+}
+label.error{
+  display:none !important;
+}
+input.error[type="text"], input.error[type="password"]{
+  outline: #c9423b 1px solid;
+}
+.create-event{
+  cursor:pointer;
+}
+#ticketinfo .first-step-amount input{
+  width:30px;
+  padding: 0px !important;
+  float:left;
+  margin: 0 !important;
+  line-height:30px;
+  text-align:center;
+}
+#dashboard-event-preview .preview-wrapper .preview-row.confirmation h1, #dashboard-event-preview .preview-wrapper .preview-row.confirmation p {
+  padding: 0px 40px;
+  display:block;
+  width: 100%;
+  margin-bottom: 30px;
+  float:left;
+}

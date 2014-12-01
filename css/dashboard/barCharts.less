@@ -1,0 +1,96 @@
+#barchart {
+	position:relative;
+height:250px;
+	}
+
+	#bars-container {
+		overflow:hidden;
+		height:280px;
+		padding:0;
+	}
+	#y-axis {
+
+	}
+	#y-axis span {
+	display:block;
+	color:#7b8594;
+	font-family:Open Sans;
+	font-weight:bold;
+	font-size:13px;
+	padding-bottom:10px;
+}
+#bars {
+	width:9999999999999px;
+	position:absolute;
+}
+.bar-container {
+	width:auto;
+	height:100%;
+	display:inline-block;
+}
+
+.bar-container .bar {
+		background:#d9e4eb;
+			height:100%;
+			width:100%;
+	border-radius:4px;
+	margin-right:10%;
+	  -webkit-perspective: 300px;  
+     -moz-perspective: 300px;  
+      -ms-perspective: 300px;  
+          perspective: 300px;
+  -webkit-transform: rotate(180deg);  -webkit-transform-style: preserve-3d;
+     -moz-transform: rotate(180deg);     -moz-transform-style: preserve-3d;
+      -ms-transform: rotate(180deg);      -ms-transform-style: preserve-3d;
+          transform: rotate(180deg);          transform-style: preserve-3d;
+          margin:auto;
+}
+
+.bar-container .bar .bar-value:hover {
+	background:#37baa0;
+}
+
+.bar-container .bar .bar-value {
+	border-radius:4px;
+	background:#3bc9ad;
+
+}
+
+.bar-container span {
+	color:#1c2b36;
+	font-family:Open Sans;
+	font-size:11px;
+	font-weight:800;
+	display:block;
+	text-align:center;
+	padding-top:10px;
+}
+
+.bar-horizontal {
+	height:20px;
+	border-radius:4px;
+	background:#d9e4eb;
+	margin: 10px 0 0 0;
+}
+
+.bar-slide {
+	padding-top:10px;
+}
+
+.bar-horizontal .sold {
+	height:20px;
+	border-radius:4px;
+	background:#f4ba4a;
+	padding-left:5px;
+	margin-left:-5px;
+	float:left;
+}
+
+.bar-horizontal .checkedin {
+	height:20px;
+	border-radius:4px;
+	background:#3bc9ad;
+	float:left;
+	position:relative;
+	z-index:5;
+}
